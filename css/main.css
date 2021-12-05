@@ -773,6 +773,9 @@ textarea{
 .modal-form-field{
     margin-bottom: 10px;
 }
+.modal-form-comment{
+    margin-bottom: 17px;
+}
 .form-input-text{
     
     display: block;
@@ -858,6 +861,47 @@ textarea{
 .modal-btn:focus{
     background-color: #0f5996;
 }
+/* checkbox */
+
+
+.licence-input:checked + .licence-text span{
+    background-color: var(--akcent-color);
+    border: none;
+}
+
+.licence-text{
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+}
+.licence-text span{
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.licence-link{
+    color: var(--akcent-color);
+}
+.licence-icon{
+    fill: var(--primeri-white-color);
+
+}
+
+
+
+
+
 
 /* Подпишитесь на разссылку */
 .subscribe{

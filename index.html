@@ -375,11 +375,26 @@
                             </svg>
                             </div>
                         </div>
-                        <div class="modal-form-field">
+                        <div class="modal-form-comment">
                             <label for="modal-comment">Коментарий</label>
                             <textarea name="modal-comment" id="modal-comment" class="modal-comment-input" placeholder="Введите текст"></textarea>
                         </div>
-                        
+                            <div class="modal-form-comment">
+                                <input 
+                                    type="checkbox" 
+                                    name="licence" 
+                                    id="licence" 
+                                    class="licence-input visually-hidden">
+                                <label for="licence" class="licence-text">
+                                    <span>
+                                        <svg class="licence-icon" width="16" height="15">
+                                            <use href="./images/icon.svg#icon-chek"></use>
+                                        </svg>
+                                    </span>
+                                    Соглашаюсь с рассылкой и принимаю 
+                                    <a href="#" class="licence-link">Условия договора</a>
+                                </label>
+                            </div>
                         
                         <button type="submit" class="modal-btn">Отправить</button>
                     </form>
