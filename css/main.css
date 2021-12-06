@@ -730,31 +730,25 @@ margin-right: 50px;
     transform:translate(-50%, -50%) scale(0.9);
 
 }
-
 .btn-close{
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
+position: absolute;
+right: 8px;
+top: 8px;
+width: 30px;
+height: 30px;
+background-color: transparent;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+fill: var(--title-text-color);
+cursor: pointer;
 }
-
-.close-svg{
-    fill: rgba(0, 0, 0, 1);
-    width: 18px;
-    height: 18px;
-}
-.close-svg:hover,
-.close-svg:focus{
+.btn-close:focus,
+.btn-close:hover{
     fill: var(--akcent-color);
-}
+} 
 
 textarea{
     resize: none;
@@ -798,6 +792,13 @@ textarea{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.modal-comment-text{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+}
+
 .modal-comment-input{
     width: 100%;
     height: 120px;
@@ -861,24 +862,23 @@ textarea{
 .modal-btn:focus{
     background-color: #0f5996;
 }
-/* checkbox */
 
 
-.licence-input:checked + .licence-text span{
+/* -------------checkbox */
+
+
+.licence-input:checked + .check-text span{
     background-color: var(--akcent-color);
     border: none;
 }
 
-.licence-text{
-    display: flex;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
+.check-text{
+    display:flex;
     justify-content: center;
     align-items: center;
+    
 }
-.licence-text span{
+.check-text span{
     width: 16px;
     height: 15px;
     border: 2px solid var(--title-text-color);
@@ -890,8 +890,17 @@ textarea{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.licence-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+
 .licence-link{
     color: var(--akcent-color);
+    text-decoration:underline ;
 }
 .licence-icon{
     fill: var(--primeri-white-color);
