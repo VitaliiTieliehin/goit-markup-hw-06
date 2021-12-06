@@ -864,7 +864,7 @@ textarea{
 }
 
 
-/* -------------checkbox */
+/* -------------checkbox----------- */
 
 
 .licence-input:checked + .check-text span{
@@ -874,8 +874,12 @@ textarea{
 
 .check-text{
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
     
 }
 .check-text span{
@@ -889,12 +893,6 @@ textarea{
     justify-content: center;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-.licence-text{
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
 }
 
 
